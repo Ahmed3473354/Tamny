@@ -53,6 +53,10 @@ const app =
 const auth =
     getAuth(app);
 
+window.testFirebaseAuth = () => {
+    console.log("Firebase User:", auth.currentUser);
+};
+
 
 // ==================================================
 // Firestore
